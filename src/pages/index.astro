@@ -1,8 +1,42 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Landing from '../layouts/Landing.astro';
 
 ---
 
-<Layout title="Welcome to Astro.">
-Soon
-</Layout>
+<Landing title="Strasbourg 1920 - Approche en humanités numérique du paysage alimentaire de Strasbourg en 1920">
+    <div id="wrap_index">
+        <div id="banner_index">
+            <h1>Strasbourg 1920</h1>
+            <h3>Boire et manger l'Alsace</h3>
+            <h4>À VENIR!</h4>
+            <!--<button>Voir la carte</button>-->
+            <!--<div>-->
+            <!--    <button>Mémoire</button>-->
+            <!--    <button>GeOCR</button>-->
+            <!--</div>-->
+        </div>
+    </div>
+
+</Landing>
+
+
+<style>
+    #wrap_index{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+    }
+
+    #banner_index{
+        padding: 20px 300px;
+        background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0,0));
+    }
+
+    #banner_index h1, #banner_index h3, #banner_index h4{
+        color: white;
+        line-height: normal;
+        text-align: center;
+    }
+</style>
